@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Enquiries | The Elephant Lodge, Ga‑Mphahlele</title>
+<meta name="description" content="Contact The Elephant Lodge in Sedimothole, Seleteng, Ga‑Mphahlele. Call 082 646 0634, WhatsApp 069 248 6657, or email info@theelephantlodge.co.za to make an enquiry.">
+<link rel="canonical" href="https://theelephantlodge.co.za/contact.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Contact & Enquiries | The Elephant Lodge">
+<meta property="og:description" content="Reach The Elephant Lodge by phone, WhatsApp, or email to enquire about accommodation, functions or conference bookings.">
+<meta property="og:image" content="https://theelephantlodge.co.za/images/hero-sunset.jpg">
+<meta property="og:url" content="https://theelephantlodge.co.za/contact.html">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<header class="site-header solid" style="position:relative;">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="The Elephant Lodge logo">
+      <span><strong>The Elephant Lodge</strong><span>Ga‑Mphahlele · Limpopo</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="accommodation.html" data-page="accommodation">Accommodation</a></li>
+        <li><a href="functions.html" data-page="functions">Functions</a></li>
+        <li><a href="conference.html" data-page="conference">Conference</a></li>
+        <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+        <li><a href="contact.html" data-page="contact">Contact</a></li>
+        <li><a href="contact.html#enquire" class="nav-cta">Enquire Now</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<section class="hero page-hero">
+  <div class="hero-bg" style="background-image:url('images/garden-lawn.jpg');"></div>
+  <div class="hero-content">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+    <p class="eyebrow">Get In Touch</p>
+    <h1>Contact & Enquiries</h1>
+    <p class="hero-sub">For bookings, availability and quotes, reach us by phone, WhatsApp, or the form below.</p>
+  </div>
+</section>
+
+<section id="enquire">
+  <div class="container">
+    <div class="contact-wrap">
+
+      <div class="form-card reveal">
+        <h2>Send an Enquiry</h2>
+        <p style="color:var(--ink-soft); margin-bottom:1.6rem;">Fill in the form and your enquiry will be sent straight to <strong>admin</strong>. We aim to respond within one business day.</p>
+
+        <!--
+          FORM SETUP: this form posts to Formspree, a free form-to-email service,
+          so a static site can deliver messages straight to your inbox with no
+          server required. Replace YOUR_FORM_ID below with your own Formspree
+          endpoint (see README.md → "Making the contact form work").
+        -->
+        <xdenybao="enquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry — The Elephant Lodge website">
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="Phone" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="service">Enquiry Type *</label>
+              <select id="service" name="Enquiry Type" required>
+                <option value="">Select one…</option>
+                <option>Overnight Accommodation</option>
+                <option>Monthly Rental Room</option>
+                <option>Function Venue</option>
+                <option>Conference Facility</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="dates">Preferred Date(s)</label>
+              <input type="text" id="dates" name="Preferred Dates" placeholder="e.g. 12–14 September 2026">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="Number of Guests" min="1">
+          </div>
+
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="Message" rows="5" required placeholder="Tell us a bit about what you need…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-wide">Send Enquiry</button>
+          <p id="form-status" class="form-status" role="status"></p>
+          <p class="form-note">By submitting, you agree to be contacted about your enquiry. Prefer email? Write to us directly at <a href="mailto:info@theelephantlodge.co.za" style="color:var(--terracotta); font-weight:700;">info@theelephantlodge.co.za</a>.</p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <div style="background:var(--night); border-radius:var(--radius); padding:34px; margin-bottom:26px;">
+          <h3 style="color:#fff;">Reach Us Directly</h3>
+          <ul class="info-list">
+            <li>
+              <span class="ic">📞</span>
+              <div><strong>Call</strong><a href="tel:+27826460634">082 646 0634</a></div>
+            </li>
+            <li>
+              <span class="ic">💬</span>
+              <div><strong>WhatsApp</strong><a href="https://wa.me/27692486657" target="_blank" rel="noopener">069 248 6657</a></div>
+            </li>
+            <li>
+              <span class="ic">✉️</span>
+              <div><strong>Email</strong><a href="mailto:info@theelephantlodge.co.za">info@theelephantlodge.co.za</a></div>
+            </li>
+            <li>
+              <span class="ic">📍</span>
+              <div><strong>Address</strong><span>Seleteng, D153 Sedimothole, Ga‑Mphahlele, Limpopo, 0737</span></div>
+            </li>
+            <li>
+              <span class="ic">🌐</span>
+              <div><strong>Facebook</strong><a href="https://www.facebook.com/profile.php?id=61555060270359" target="_blank" rel="noopener">The Elephant Lodge</a></div>
+            </li>
+          </ul>
+          <a href="https://www.google.com/maps/dir//Seleteng,+D153+Sedimothole,+Seleteng,+Ga,+Ga-Mphahlele,+0737" target="_blank" rel="noopener" class="btn btn-ghost btn-wide">Get Directions</a>
+        </div>
+
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=Seleteng,+D153+Sedimothole,+Ga-Mphahlele,+0737&output=embed" title="Map to The Elephant Lodge" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="images/logo.jpg" alt="The Elephant Lodge logo"><strong>The Elephant Lodge</strong></div>
+        <p>Peaceful accommodation, function venue and conference facility in Sedimothole, Seleteng, Ga‑Mphahlele, Limpopo.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profile.php?id=61555060270359" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://wa.me/27692486657" target="_blank" rel="noopener" aria-label="WhatsApp">w</a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="accommodation.html">Accommodation & Monthly Rental</a></li>
+        <li><a href="functions.html">Functions</a></li>
+        <li><a href="conference.html">Conference</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+27826460634">082 646 0634</a></li>
+        <li><a href="https://wa.me/27692486657" target="_blank" rel="noopener">WhatsApp 069 248 6657</a></li>
+        <li><a href="mailto:info@theelephantlodge.co.za">info@theelephantlodge.co.za</a></li>
+      </ul></div>
+      <div><h4>Address</h4><ul>
+        <li>Seleteng, D153 Sedimothole,<br>Ga‑Mphahlele, Limpopo, 0737</li>
+        <li><a href="https://www.google.com/maps/dir//Seleteng,+D153+Sedimothole,+Seleteng,+Ga,+Ga-Mphahlele,+0737" target="_blank" rel="noopener">Get Directions →</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> The Elephant Lodge. All rights reserved.</span>
+      <span>Sedimothole, Seleteng, Ga‑Mphahlele, Limpopo, South Africa</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27692486657" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<script src="js/main.js"></script>
+</body>
+</html>
